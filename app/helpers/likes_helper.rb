@@ -1,7 +1,8 @@
 module LikesHelper
-  def likes(message)
+  def likes(message, user)
     heart =
-    if message.likes.find_by(user: current_user).present?
+    if message.likes.find_by(user: user).present?
+   
       "💘"
     else
       "💚"
