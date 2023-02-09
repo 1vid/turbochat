@@ -4,5 +4,5 @@ class Message < ApplicationRecord
   belongs_to :room
 
   scope :sorted, -> { order(:id) }
-  validates :bodt, presence: true 
+  validates :body, presence: true 
 end
